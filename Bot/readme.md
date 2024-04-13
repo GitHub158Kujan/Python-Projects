@@ -9,7 +9,7 @@ To use this bot, you'll need to follow these steps:
 1. Clone this repository to your local machine:
 
    ```
-   git clone https://github.com/your-username/reddit-bot.git
+   git clone https://github.com//GitHub158Kujan/Python-Projects.git
    ```
 
 2. Install the required dependencies. You can do this using pip and the provided `requirements.txt` file:

@@ -39,7 +39,7 @@ You can install the required dependencies using pip:
 pip install -r requirements.txt
 ```
 
-#Demonstration
+## Demonstration
 ![Screenshot (126)](https://github.com/GitHub158Kujan/Python-Projects/assets/156439983/479216f0-7dfc-4835-aef9-ea32503133d2)
 
 

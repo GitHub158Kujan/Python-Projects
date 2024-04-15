@@ -83,10 +83,17 @@ def checkWin():
 #switch player
 def switchPlayer():
     global currentplayer
-    if currentplayer=="X":
-        currentplayer="O"
+    if currentplayer == "X":
+        secplayer = "O"
     else:
-        currentplayer="X"  
+        secplayer = "X"
+        
+def switchPlayerComputer():
+    global currentplayer
+    if currentplayer == "X":
+        currentplayer = "O"
+    else:
+        currentplayer = "X"
          
 #computer
 def computer(board):
@@ -94,14 +101,15 @@ def computer(board):
         position=random.randint(0,8)  
         if board[position]==" ":
             board[position]="O"
-            switchPlayer() 
+            switchPlayerComputer() 
             break 
                
 
-               
+print("------TIC TAC TOE GAME-----")               
 print("Press C: If you want to play with computer: ")
 print("Press F: If you want to play with friend: ")
-sel=input()        
+sel=input()   
+     
 #Run the program
 while gameRunning:
     if sel == 'F' or sel == 'f':
@@ -125,7 +133,7 @@ while gameRunning:
            gameRunning = False
            gameboard(board)
            break
-       switchPlayer() 
+       switchPlayerComputer() 
        computer(board)
        if checkWin() or checkTie(board):
            gameRunning = False
